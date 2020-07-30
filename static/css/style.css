@@ -29,6 +29,10 @@ output:
     display: inline-block;
 }
 
+i.date {
+    color: #999
+}
+
 .article-meta,
 .menu a {
     text-decoration: none;
