@@ -22,7 +22,7 @@
   <meta name="twitter:description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
 
-  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <title>{{ .Title }}</title>
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
   <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
   {{ range .Site.Params.custom_css -}}
