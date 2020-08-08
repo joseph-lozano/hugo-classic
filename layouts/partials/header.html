@@ -20,7 +20,9 @@
   <meta name="twitter:site" content="@joseph_lozano_">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:url" content="{{ .Permalink }}">
-  <meta name="twitter:image" content="/images/apple-touch-icon.png">
+  {{ if $.Param "image" }}
+  <meta name="twitter:image" content="{{ $.Param "image" }}">
+  {{ end}
   <meta name="twitter:description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
 
