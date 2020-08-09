@@ -16,6 +16,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+
+  <meta property="og:title" content="Joseph Lozano's Blog" />
+  <meta property="og:type" content="website" />
+  <meta name="og:description"
+    content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}" />
+  {{ if $.Param "image" }}
+  <meta name="og:image" content="{{ $.Param "image" }}">
+  {{ end }}
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@joseph_lozano_">
   <meta name="twitter:title" content="{{ .Title }}">
