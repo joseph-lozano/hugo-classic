@@ -27,7 +27,7 @@
   <meta name="description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
 
-  <meta property="og:title" content="Joseph Lozano's Blog" />
+  <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="website" />
   <meta name="og:description"
     content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
